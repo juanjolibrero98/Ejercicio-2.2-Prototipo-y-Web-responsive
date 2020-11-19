@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+/*
+? --------------ESTILOS HEADER-------------------------*/
+header {
+  width: 100%;
+  height: auto;
+}
+header img {
+  width: 95%;
+  margin-top: 10px;
+}
+
+header nav {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 20px 0;
+  background-color: #247cc3;
+  padding: 10px 0;
+}
+header nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+header nav ul li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 8px;
+  font-size: 6vw;
+}
+header li:nth-child(1) {
+  padding-left: 8px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(219, 216, 216);
+  text-shadow: 0.5px 0.5px 5px black;
+}
+header nav ul li a:hover {
+  color: #247cc3;
+}
+.opina {
+  color: #247cc3;
+  text-decoration: overline wavy;
+  display: none;
+}
+.redes{
+  display: none;
+}
+/*
+!-----------------------FIN ESTILOS HEADER------------------*/
+h1 {
+  text-align: center;
+  color: #247cc3;
+}
+
+.contenedor {
+  width: 100%;
+  height: auto;
+}
+
+.tarjetas {
+  width: 50%;
+  margin: 0 25%;
+}
+.tarjeta {
+  width: 100%;
+  border: 2px solid #000;
+  box-shadow: 5px -5px 0 2px #63aeec;
+  padding: 10px 20px;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 4vw;
+}
+.tarjeta img {
+  width: 100%;
+}

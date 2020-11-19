@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Meta de la web-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <meta name="author" content="Juan Jose Librero Cansino">
+    <meta name="description" content="web tipo Portafolio sobre mi">
+    <meta name="copyright" content="JuanJoseLibreroCansino © 2020">
+    <meta name="generator" content="VSCode, Html,Css,proyectos">
+    <meta name="languaje" content="Español">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="img/icono.JPG">
+    <!--link para agregar un par de estilos de letra de google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <!--Enlace del css externo-->
+    <link rel="stylesheet" media="(max-width:576px)" href="css/small-styles.css">
+    <link rel="stylesheet" media="(min-width:576px) and (max-width:992px)" href="css/tablet-styles.css">
+    <link rel="stylesheet" media="(min-width:992px)" href="css/pc-styles.css">
+    <!--Estilos internos, es para dar un poco de color a la tabla de módulos-->
+    <style>
+        .cabecera{
+            background-color: rgb(214, 219, 224);
+        }     
+        
+    </style>
+</head>
+<body>
+    <!--Header de pag principal y todas las subpag, esta formado por un banner y la barra de navegación-->
+    <header>
+        <img src="img/banner.png" alt="Banner">
+        
+        <nav>
+            <ul>
+                <!--Enlaces internos a otras secciones de la pag principal-->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sobreMi">Conoceme</a></li>
+                <li><a href="#modulos">Módulos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a id="opina" href="#">Contacto!</a></li> 
+            </ul>
+        </nav>
+        <div class="redes">
+            <a href="https://github.com/"><img width="30px" height="30px" src="img/github2.png" alt="Github"></a>
+            <a href="#"><img width="30px" height="30px" src="img/linkedin2.png" alt="Linkedin"></a>
+            <a href="#"><img width="30px" height="30px" src="img/twitter2.png" alt="Twitter"></a>
+        </div>
+    </header>
+   
+    <!--Aqui en seccion introduzco todo el contenido de la web principal, quitando el header y footer-->
+    <section>
+        <!--Un articulo llamado sobre mi, compuesto por un h2, un separador, una img de perfil y texto descriptivo sobre mi con variedad a la hora de usar atributos html5-->
+        <div class="sobreM">
+            <div class="contenedorEfectoTitulos">
+                <h3 class="efecto" data-text="Conoceme +">Conoceme +</h3>
+            </div>
+            <hr>
+        </div>
+        
+        <article id="sobreMi" class="sobreMii">
+           <img src="img/perfil.png" alt="Perfil">
+            <div class="bloque1">
+                <p class="descr">Hola<sup></sup> me llamo <code>main(){ printf(" <b>Juan José</b>");}</code></p>  
+                <p>Soy un estudiante de último año en un grado superior <em>Desarrollo de aplicaciones web</em><sub></sub>. Mis aficiones son <strong>Tenis</strong>, <mark style="background-color: #247cc3;">futbol</mark> <s>y</s><small> Padel</small>.
+                <br>
+                <br>
+                <a class="ftp" href="./uso de FTP/index.html">Ver Uso de FTP</a>
+                <br>
+                <br>
+            </div>
+            <div class="bloque2">
+                <span>Lorem ipsum dolor. </span>
+                <span>Lorem ipsum dolor</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci architecto assumenda, aperiam ad accusamus voluptas qui. Velit quo blanditiis dicta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam dolor quidem quos architecto fugit reiciendis, facilis vero maiores consectetur sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae perferendis est quam et nemo, maiores autem laudantium illo quia.</p>
+                
+            </div>
+        </article>
+
+        <!--Articulo 2, donde se encuentra un h2, un separador y una tabla con todos los módulos de segundo año de D.A.W, y donde introduzco un recurso realizado por mi en forma de imagenes, donde sale lo que hemos dado o vamos a dar en cada asignatura-->
+        <article id="modulos">
+            <div class="contenedorEfectoTitulos">
+                <h3 class="efecto" data-text="módulos">módulos</h3>            
+            </div>
+            <hr>
+            <table class="gradoDAW">
+                <tbody>
+                    <tr class="cabecera">
+                      <th scope="row">Asignaturas</th>
+                      <th>Aprendido</th>         
+                      <th>Por aprender</th>                   
+                    </tr>           
+                    <tr>            
+                      <th>Cliente</th>             
+                      <td></td>            
+                      <td><img src="https://img.shields.io/badge/-F7DF1E?logo=JavaScript&logoColor=fff" alt="JavaScript"><img src="https://img.shields.io/badge/-DD0031?logo=Angular&logoColor=fff" alt="Angular"><img src="https://img.shields.io/badge/-61DAFB?logo=React&logoColor=fff" alt="React"><img src="https://img.shields.io/badge/-4FC08D?logo=Vue.js&logoColor=fff" alt="Vue.js"><img src="https://img.shields.io/badge/-764ABC?logo=Redux&logoColor=fff" alt="Redux"><img src="https://img.shields.io/badge/-007ACC?logo=TypeScript&logoColor=fff" alt="TypeScript"></td>                
+                    </tr>             
+                    <tr>           
+                      <th>Diseño</th>           
+                      <td><img src="https://img.shields.io/badge/-E34F26?logo=HTML5&logoColor=fff" alt="HTML5"><img src="https://img.shields.io/badge/-1572B6?logo=CSS3&logoColor=fff" alt="CSS3"></td>             
+                      <td><img src="https://img.shields.io/badge/-CC6699?logo=SASS&logoColor=fff" alt="SASS"><img src="https://img.shields.io/badge/-CF4647?logo=gulp&logoColor=fff" alt="GULP"><img src="https://img.shields.io/badge/-0089D6?logo=Microsoft%20Azure&logoColor=fff" alt="AZURE"><img src="https://img.shields.io/badge/-563D7C?logo=Bootstrap&logoColor=fff" alt="Bootstrap"><img src="https://img.shields.io/badge/-0769AD?logo=Jquery&logoColor=fff" alt="Jquery"><img src="https://img.shields.io/badge/-3776AB?logo=Python&logoColor=fff" alt="Python"><img src="https://img.shields.io/badge/-092E20?logo=Django&logoColor=fff" alt="Django"><img src="https://img.shields.io/badge/-21759B?logo=Wordpress&logoColor=fff" alt="Wordpress"></td>                   
+                    </tr>            
+                    <tr>          
+                      <th>Servidor</th>            
+                      <td><img src="https://img.shields.io/badge/-007396?logo=Java&logoColor=fff" alt="Java"><img src="https://img.shields.io/badge/-02303A?logo=Gradle&logoColor=fff" alt="Gradle"><img src="https://img.shields.io/badge/-4479A1?logo=MySql&logoColor=fff" alt="Mysql"><img src="https://img.shields.io/badge/-C71A36?logo=Apache%20Maven&logoColor=fff" alt="Maven"><img src="https://img.shields.io/badge/-F80000?logo=Oracle&logoColor=fff" alt="Oracle"><img src="https://img.shields.io/badge/-003545?logo=MariaDB&logoColor=fff" alt="MariaDB"></td>          
+                      <td><img src="https://img.shields.io/badge/-000000?logo=Json&logoColor=fff" alt="Json"><img src="https://img.shields.io/badge/-339933?logo=Node.js&logoColor=fff" alt="Nodejs"><img src="https://img.shields.io/badge/-6DB33F?logo=Spring&logoColor=fff" alt="Spring"><img src="https://img.shields.io/badge/-336791?logo=PostgreSQL&logoColor=fff" alt="PostgreSQL"><img src="https://img.shields.io/badge/-47A248?logo=MongoDB&logoColor=fff" alt="MongoDB"></td>         
+                    </tr>
+                    <tr>          
+                      <th>Despliegue</th>            
+                      <td colspan="2"><img src="https://img.shields.io/badge/-2496ED?logo=Docker&logoColor=fff" alt="Docker"><img src="https://img.shields.io/badge/-5091CD?logo=Joomla&logoColor=fff" alt="Joomla"><img src="https://img.shields.io/badge/-21759B?logo=Wordpress&logoColor=fff" alt="Wordpress"><img src="https://img.shields.io/badge/-D22128?logo=apache&logoColor=fff" alt="Apache"></td>                                         
+                    </tr>
+                    <tr>          
+                      <th>HLC</th>            
+                      <td colspan="2"><img src="https://img.shields.io/badge/-181717?logo=Github&logoColor=fff" alt="Github"><img src="https://img.shields.io/badge/-777BB4?logo=php&logoColor=fff" alt="PHP"></td>                                         
+                    </tr>
+                    <tr>          
+                      <th>Empresa</th>  
+                      <td colspan="2"><img src="https://img.shields.io/badge/-DF0000?logo=Emlakjet&logoColor=fff" alt="Proyecto Empresa"></td>                    
+                    </tr> 
+                </tbody>          
+            </table>
+        </article>
+
+        <!--Articulo 3, aquí aparecen una tarjeta con un enlace por cada tarea realizada por mi como repaso de HTML5 y CSS3-->
+        <!--Cada tarjeta esta formada por una imagen que es una pequeña visualización de lo que se ha hecho en cada tarea(esta imagen tiene una
+        propiedad de css aplicada que se llama object-fit:cover que la he utilizado porque al se recuadros muy pequeños, las imagenes no se veian nada bien,
+        entonces lo que hace es ocupar la imagen el espacio específico que le he dado y se "redimensiona", perdiendo parte de la imagen pero viendose con mayor calidad),   
+        y luego el cuerpo de la tarjeta donde esta el titulo con un B, un párrafo y el enlace que te lleva a la tarea-->
+        <article id="proyectos" class="proyectoss">
+            <div class="contenedorEfectoTitulos">
+                <h3 class="efecto" data-text="proyectos">proyectos</h3>
+            </div>
+            <hr>
+            <div class="tarjetas">
+                <div class="tarjeta1">
+                    <img src="img/proyecto1.JPG" alt="Proyecto1">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 1</b>
+                        <p>Ejercicio Maquetación y diseño adaptable.</p>
+                        <a href="proyectos/Ejercicio1/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto2.JPG" alt="Proyecto2">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 2</b>
+                        <p>Ejercicio sobre <br> Selectores avanzados.</p>
+                        <a href="proyectos/Ejercicio2/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto3.JPG" alt="Proyecto3">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 3</b>
+                        <p>Ejercicio sobre <br> Selectores.</p>
+                        <a href="proyectos/Ejercicio3/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto4.JPG" alt="Proyecto4">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 4</b>
+                        <p>Ejercicio  Múltiples columnas y separadores.</p>
+                        <a href="proyectos/Ejercicio4/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto5.JPG" alt="Proyecto5">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 5</b>
+                        <p>Ejercicio  de Animaciones.</p>
+                        <a href="proyectos/Ejercicio5/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto6.JPG" alt="Proyecto6">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 6</b>
+                        <p>Ejercicio  de Transiciones.</p>
+                        <a href="proyectos/Ejercicio6/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <!--Uso de iframe y video al mismo tiempo usando la función que te da youtube para compartir un video suyo en tu propia web, en este iframe, como en el resto de los que he puesto mas abajo
+                    lo que se ve es a un profesor usando la propiedad de object-fit cover en una galeria, como la que he usado yo en las img de las tarjetas-->
+                    <iframe src="https://www.youtube.com/embed/qdRPKfJWngk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 7</b>
+                        <p>Ejercicio Transforms.</p>
+                        <a href="proyectos/Ejercicio7/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto8.JPG" alt="Proyecto8">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 8</b>
+                        <p>Ejercicio Sombras Múltiples y Bordes.</p>
+                        <a href="proyectos/Ejercicio8/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta1">
+                    <img src="img/proyecto9.JPG" alt="Proyecto9">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 9</b>
+                        <p>Ejercicios sobre <br> Estilo texto</p>
+                        <a href="proyectos/Ejercicio9/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto10.JPG" alt="Proyecto10">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 10</b>
+                        <p>Ejercicio sobre <br> Modelo caja </p>
+                        <a href="proyectos/Ejercicio10/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto11.JPG" alt="Proyecto11">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 11</b>
+                        <p>Ejercicio sobre <br> Estilos avanzados</p>
+                        <a href="proyectos/Ejercicio11/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <iframe src="https://www.youtube.com/embed/qdRPKfJWngk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 12</b>
+                        <p>Ejercicio Estilos CSS</p>
+                        <a href="proyectos/Ejercicio12/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto13.JPG" alt="Proyecto13">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 13</b>
+                        <p>Ejercicio de Estilos Enlaces CSS</p>
+                        <a href="proyectos/Ejercicio13/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto14.JPG" alt="Proyecto14">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 14</b>
+                        <p>Ejercicio de Galeria de imágenes</p>
+                        <a href="proyectos/Ejercicio14/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto15.JPG" alt="Proyecto15">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 15</b>
+                        <p>Ejercicio de Maquetación formulario</p>
+                        <a href="proyectos/Ejercicio15/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="tarjeta1">
+                    <img src="img/proyecto16.JPG" alt="Proyecto16">
+                    <div class="cuerpoTarjeta">
+                        <b>Proyecto 16</b>
+                        <p>Ejercicio sobre <br> Estilos de texto</p>
+                        <a href="proyectos/Ejercicio16/index.html">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--footer de la pag principal, compuesto por 3 div, que los he puesto así para poder dividir el footer en 3 columnas, 
+        primer div un p, segundo div enlaces redes sociales y tercer div enlaces políticas y cookies web-->
+    <footer>
+        <div class="contenedorFooter">
+            <div class="box">
+                <h1>LibCan</h1>
+                <h1>Juanjo</h1>
+            </div>       
+        </div>
+        <!--<div class="fot1">
+            <p>Web Juan José © 2020</p>
+        </div>-->
+        <div class="fot2">
+            <a href="https://github.com/"><img width="30px" height="30px" src="img/github2.png" alt="Github"></a>
+            <a href="#"><img width="30px" height="30px" src="img/linkedin2.png" alt="Linkedin"></a>
+            <a href="#"><img width="30px" height="30px" src="img/twitter2.png" alt="Twitter"></a>
+        </div>
+        <div class="fot3">
+            <a class="politica" href="#">Términos</a>
+            <a class="politica" href="#">Aviso de cookies</a>
+        </div>
+    </footer>
+</body>
+</html>

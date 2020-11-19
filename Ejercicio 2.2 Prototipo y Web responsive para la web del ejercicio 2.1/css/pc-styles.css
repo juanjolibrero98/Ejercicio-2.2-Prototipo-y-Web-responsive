@@ -1,0 +1,404 @@
+/*Estilos importados desde otro fichero, solo como prueba*/
+@import url(prueba-import-css.css);
+
+/*Este css va dirigido a resoluciones para moviles*/
+/*Uso selector universal, para toda la pag*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+
+/*
+? --------------ESTILOS HEADER-------------------------*/
+header {
+  width: 100%;
+  /*width: 95%;
+  margin: auto;
+  margin-top: 10px;*/
+  height: auto;
+  display: grid;
+  grid-template-areas:  "logo menu"
+                        "logo redes";
+  
+  box-shadow:0 1px 4px #247cc3, 0 0 40px #247cc3 inset;
+  
+}
+header img {
+    grid-area: logo;
+  width: 60%;
+    margin: auto;
+}
+
+header nav {
+  width: 100%;
+  height: auto;
+  grid-area: menu;
+  margin: 20px 0;
+  /*background-color: #247cc3;
+  */padding: 10px 0;
+}
+header nav ul {
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+
+}
+header nav ul li {
+  list-style-type: none;
+  font-size: 20px;
+}
+header nav ul li:nth-child(5) {
+    font-size: 20px;
+    
+}
+/*Uso de text-sadow para dar sombra a los textos del nav*/
+header nav ul li a {
+  text-decoration: underline;
+  color: #247cc3;
+  text-shadow: 0.5px 0.5px 5px #247cc3;
+}
+/*Uso de propiedades css como hover, active, visited*/
+header nav ul li a:hover {
+  color: #5da7e4;
+}
+header nav ul li a:active {
+  color: rgb(247, 117, 117);
+}
+/*uso de decoracion de texto ademas de display none para quitar el enlace de contacto y que su espacio sea ocupado*/
+#opina {
+  color: #247cc3;
+  text-decoration: overline wavy;
+}
+#opina:hover {
+    color: #5da7e4;
+}
+#opina:active {
+    color: rgb(247,117,117);
+  }
+.redes {
+    grid-area: redes;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    grid-column-gap: 30px;  
+      justify-self: center;
+      align-items: center;
+      margin-right: 180px;
+      margin-bottom: 10px;
+}
+
+
+
+/*
+!-----------------------FIN ESTILOS HEADER------------------*/
+
+/*
+?--------------ESTILOS SECTIONS----------------------*/
+
+/*
+*-----------ESTILOS ARTICLE1 SobreMi--------------*/
+/*Para quitar la img y el h2 del article sobre mi*/
+
+/*Uso de propiedades css como first-letter, after, :nth-last-child además de selectores como + , ~ , >*/
+.descr::first-letter {
+  font-size: 30px;
+}
+.descr::after {
+  content: "💥";
+}
+.sobreMii span:nth-last-child(2) {
+  font-size: larger;
+}
+
+br + span {
+  color: #247cc3;
+}
+span ~ span {
+  color: #63ace7;
+}
+/*Uso de Grid para apartado sobre mi*/
+
+#sobreMi {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+#sobreMi > img {
+  width: 100%;
+  height: auto;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.bloque1 {
+    width: 60%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 40px;
+    font-size: 1.5vw;
+    justify-self: center;
+}
+
+.ftp {
+    text-decoration: none;
+    border: 2px solid #247cc3;
+    border-radius: 30px;
+    padding: 10px;
+    color: #247cc3;
+    background-color: white;
+    margin-left: 25%;
+}
+.ftp:hover{
+  background-color: #247cc3;
+  color: white;
+  
+  cursor: pointer;
+  transition: 1s;
+}
+
+.bloque2 {
+    width: 60%;
+    margin: 20px 0;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+    font-size: 1.5vw;
+}
+
+/*Estilos para todos los H3*/
+
+.contenedorEfectoTitulos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.efecto{
+  margin-top: 30px;
+  position: relative;
+  font-size: 3vw;
+  color: white;
+  -webkit-text-stroke: 0.1vw #d8d6d6;
+  text-transform: uppercase;
+}
+.efecto::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;color: #247cc3;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #247cc3;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,10%,100%{
+    width: 0;
+  }
+  70%,90%{
+    width: 100%;
+  }
+}
+/*Estilos para todos los  separadores*/
+hr {
+  width: 25%;
+  margin: 0 37.5%;
+  border: 1px solid;
+}
+/*
+*-----------FIN ESTILOS ARTICLE1 SobreMi--------------*/
+
+/*
+*------------------ESTILOS ARTICLE2 MODULOS-----------------*/
+
+.gradoDAW {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+table tbody tr th {
+  border: 1px solid #000;
+  padding: 10px;
+  font-size: 2vw;
+}
+table tbody tr td {
+  border: 1px solid #000;
+  padding: 10px;
+}
+table tbody tr td img {
+  margin: 0px 5px;
+}
+.cabecera th:nth-child(2) {
+  text-align: center;
+}
+.cabecera th:nth-child(3) {
+  text-align: center;
+}
+/*
+*------------------FIN ESTILOS ARTICLE2 MODULOS-----------------*/
+
+/*
+*----------ESTILOS ARTICLE3 PROYECTOS----------------------*/
+
+/*Estilos para el espacio que ocupara todas las tarjetas*/
+.tarjetas {
+  width: 90%;
+  margin: 20px 5%;
+  height: 1700px;
+ display: grid;
+ grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 350px 350px 350px 350px;
+  grid-column-gap: 7%;
+  grid-row-gap: 5%;
+  justify-items: stretch;
+  
+}
+/*Aqui empieza los estilos para dar forma a la tarjeta, que son todas iguales*/
+.tarjeta1 {
+  
+  height: 370px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 10px 0;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 2px rgb(131, 129, 129);
+  transition: all 0.25s;
+}
+.tarjeta1 img {
+  width: 90%;
+  height: 150px;
+  margin: 5px 10px;
+  object-fit: cover; /*El uso de lo que comenté en el html*/
+}
+.tarjeta1 iframe {
+  width: 90%;
+  margin: 5px 10px;
+}
+.cuerpoTarjeta {
+  text-align: center;
+  font-size: 20px;
+}
+.cuerpoTarjeta b{
+    font-size: 2vw;
+}
+.cuerpoTarjeta p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 2vw;
+}
+.cuerpoTarjeta a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #247cc3;
+  border-radius: 8px;
+  background-color: #247cc3;
+}
+.cuerpoTarjeta a:hover {
+  color: #247cc3;
+  background-color: white;
+  border-color: #247cc3;
+  transition: 1s;
+}
+.tarjeta1:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px  #247cc3;
+}
+/*
+*----------FIN ESTILOS ARTICLE3 PROYECTOS----------------------*/
+
+/*
+!-------------------FIN ESTILOS SECTIONS--------------------*/
+
+/*
+?--------------ESTILOS FOOTER-----------------------*/
+.contenedorFooter{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: #ffffff;
+}
+.box{
+  position: relative;
+  width: 250px;
+  padding: 35px 0;
+}
+.box h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  
+  text-transform: uppercase;
+  text-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.box h1:nth-child(2){
+  background: #ffffff;
+  color: #247cc3;
+  overflow: hidden;
+  z-index: 2;
+  transition: 0.5s;
+  /*clip-path: polygon(0 0, 100% 0, 100% 14%, 0 14%);*/
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+
+
+}
+.box h1:nth-child(2):hover{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+
+/*Digo que el footer ocupe todo el width y como seran 3 columnas, abajo digo que cada div ocupe l 33,33%*/
+footer {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #247cc3;
+  box-shadow: 0.5px 0.5px 10px #247cc3;
+  display: grid;
+  grid-template-columns: repeat(3,33.33%);
+  justify-items: center;
+  align-items: center;
+  font-size: 2vw;
+}
+
+footer img {
+  margin: 10px 10px;
+}
+
+.politica {
+  padding: 0 10px;
+  color: #555555;
+  text-decoration-color: #247cc3;
+}
+
+.politica:hover {
+  color: #247cc3;
+  text-decoration-color: #555555;
+}
+
+/*
+!--------------FIN ESTILOS FOOTER------------------*/

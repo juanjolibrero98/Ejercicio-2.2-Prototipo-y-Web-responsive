@@ -1,0 +1,366 @@
+/*Estilos importados desde otro fichero, solo como prueba*/
+@import url(prueba-import-css.css);
+
+/*Este css va dirigido a resoluciones para moviles*/
+/*Uso selector universal, para toda la pag*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+
+/*
+? --------------ESTILOS HEADER-------------------------*/
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+header img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+header nav {
+  width: 100%;
+  height: auto;
+  
+  margin: 20px 0;
+  background-color: #247cc3;
+  padding: 10px 0;
+}
+header nav ul {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*Uso de display inline para poner todo el nav en la misma linea, ademas de darle un padding para
+separarlos entre ellos y un tamaño de letra responsivo usando vw*/
+header nav ul li {
+  list-style-type: none;
+  font-size: 4.5vw;
+}
+header nav ul li:nth-child(5) {
+    font-size: 3vw;
+    align-self: flex-end;
+}
+
+/*Uso de text-sadow para dar sombra a los textos del nav*/
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(219, 216, 216);
+  text-shadow: 0.5px 0.5px 5px black;
+}
+
+/*Uso de propiedades css como hover, active, visited*/
+header nav ul li a:hover {
+  color: #247cc3;
+}
+header nav ul li a:active {
+  color: #2f95e9;
+}
+header nav ul li a:visited {
+  color: rgb(201, 192, 192);
+}
+/*uso de decoracion de texto ademas de display none para quitar el enlace de contacto y que su espacio sea ocupado*/
+#opina {
+  color: #dbd4d4;
+  text-decoration: overline wavy;
+  
+}
+
+/*
+!-----------------------FIN ESTILOS HEADER------------------*/
+
+/*
+?--------------ESTILOS SECTIONS----------------------*/
+
+/*
+*-----------ESTILOS ARTICLE1 SobreMi--------------*/
+/*Para quitar la img y el h2 del article sobre mi*/
+.redes {
+  display: none;
+}
+/*Uso de propiedades css como first-letter, after, :nth-last-child además de selectores como + , ~ , >*/
+.descr::first-letter {
+  font-size: 30px;
+}
+.descr::after {
+  content: "💥";
+}
+.sobreMii span:nth-last-child(2) {
+  font-size: larger;
+}
+
+br + span {
+  color: #247cc3;
+}
+span ~ span {
+  color: #63ace7;
+}
+/*Uso de flex para apartado sobre mi*/
+#sobreMi {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#sobreMi > img {
+  width: 40%;
+  height: 300px;
+    order:2;
+    
+}
+.bloque1 {
+    width: 60%;
+    padding-left: 10%;
+    order: 1;
+    margin-top: 40px;
+    font-size: 3vw;
+}
+.ftp {
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #247cc3;
+    margin-left: 25%;
+}
+.bloque2 {
+    width: 90%;
+    margin: 20px 5%;
+    order: 3;
+    font-size: 3vw;
+}
+
+/*Estilos para todos los H3*/
+
+.contenedorEfectoTitulos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.efecto{
+  margin-top: 30px;
+  position: relative;
+  font-size: 3vw;
+  color: white;
+  -webkit-text-stroke: 0.1vw #d8d6d6;
+  text-transform: uppercase;
+}
+.efecto::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;color: #247cc3;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #247cc3;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,10%,100%{
+    width: 0;
+  }
+  70%,90%{
+    width: 100%;
+  }
+}
+
+
+/*Estilos para todos los  separadores*/
+hr {
+  width: 25%;
+  margin: 0 37.5%;
+  border: 1px solid;
+}
+/*
+*-----------FIN ESTILOS ARTICLE1 SobreMi--------------*/
+
+/*
+*------------------ESTILOS ARTICLE2 MODULOS-----------------*/
+
+.gradoDAW {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+table tbody tr th {
+  border: 1px solid #000;
+  padding: 10px;
+  font-size: 3vw;
+}
+table tbody tr td {
+  border: 1px solid #000;
+  padding: 10px;
+}
+table tbody tr td img {
+  margin: 0px 5px;
+}
+.cabecera th:nth-child(2) {
+  text-align: center;
+}
+.cabecera th:nth-child(3) {
+  text-align: center;
+}
+/*
+*------------------FIN ESTILOS ARTICLE2 MODULOS-----------------*/
+
+/*
+*----------ESTILOS ARTICLE3 PROYECTOS----------------------*/
+
+/*Estilos para el espacio que ocupara todas las tarjetas*/
+.tarjetas {
+  width: 80%;
+  margin: 20px 10%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*Aqui empieza los estilos para dar forma a la tarjeta, que son todas iguales*/
+.tarjeta1 {
+  width: 40%;
+  height: 300px;
+  border: 1px solid #000;
+  margin: 10px 0;
+  margin: auto;
+
+  margin-bottom: 20px;
+}
+.tarjeta1 img {
+  width: 90%;
+  height: 120px;
+  margin: 5px 10px;
+  object-fit: cover; /*El uso de lo que comenté en el html*/
+}
+.tarjeta1 iframe {
+  width: 90%;
+  margin: 5px 10px;
+}
+.cuerpoTarjeta {
+  text-align: center;
+  font-size: 20px;
+}
+.cuerpoTarjeta b{
+    font-size: 3vw;
+}
+.cuerpoTarjeta p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 2.5vw;
+}
+.cuerpoTarjeta a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #247cc3;
+  border-radius: 8px;
+  background-color: #247cc3;
+}
+.cuerpoTarjeta a:hover {
+  color: #247cc3;
+  background-color: white;
+  border-color: #247cc3;
+}
+
+/*
+*----------FIN ESTILOS ARTICLE3 PROYECTOS----------------------*/
+
+/*
+!-------------------FIN ESTILOS SECTIONS--------------------*/
+
+/*
+?--------------ESTILOS FOOTER-----------------------*/
+.contenedorFooter{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: #ffffff;
+}
+.box{
+  position: relative;
+  width: 250px;
+  padding: 40px 0;
+}
+.box h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  
+  text-transform: uppercase;
+  text-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.box h1:nth-child(2){
+  background: #ffffff;
+  color: #247cc3;
+  overflow: hidden;
+  z-index: 2;
+  transition: 0.5s;
+  /*clip-path: polygon(0 0, 100% 0, 100% 14%, 0 14%);*/
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+
+
+}
+.box h1:nth-child(2):hover{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+/*Digo que el footer ocupe todo el width y como seran 3 columnas, abajo digo que cada div ocupe l 33,33%*/
+footer {
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3vw;
+}
+/*
+footer p {
+  color: #000000;
+  cursor: pointer; 
+  opacity: 0.8;
+}
+*/
+footer img {
+  margin: 10px 10px;
+}
+
+.politica {
+  padding: 0 10px;
+  color: #555555;
+  text-decoration-color: #247cc3;
+}
+
+.politica:hover {
+  color: #247cc3;
+  text-decoration-color: #555555;
+}
+
+/*
+!--------------FIN ESTILOS FOOTER------------------*/
