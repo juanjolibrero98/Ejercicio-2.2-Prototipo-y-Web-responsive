@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+/*
+? --------------ESTILOS HEADER-------------------------*/
+header {
+  width: 100%;
+  height: auto;
+}
+header img {
+  width: 95%;
+  margin-top: 10px;
+}
+
+header nav {
+  width: 100%;  
+  height: auto;
+  text-align: center;
+  margin: 20px 0;
+  background-color: #247cc3;
+  padding: 10px 0;
+}
+header nav ul {
+  padding: 0px;
+  margin: 0px;
+  
+}
+header nav ul li{
+  list-style-type: none;
+  display: inline;
+  padding-right:8px;
+  font-size: 6vw;
+}
+header li:nth-child(1){
+  padding-left: 8px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(219, 216, 216);
+  text-shadow: 0.5px 0.5px 5px black;
+}
+header nav ul li a:hover {
+  color: #247cc3;
+}
+.opina {
+  color: #247cc3;
+  text-decoration: overline wavy;
+  display: none;
+}
+
+/*
+!-----------------------FIN ESTILOS HEADER------------------*/
+
+/*
+?-------------Estilos Ejercicio 12 de repaso HTML y CSS*/
+h1{
+  text-align: center;
+  color: #00F;
+}
+div#paginacion {
+  border: 1px solid #CCC;
+  background-color: #E0E0E0;
+  padding: .5em;
+}
+.derecha {
+  float: right;
+}
+.izquierda {
+  float: left;
+}
+div.clear {
+  clear: both;
+}

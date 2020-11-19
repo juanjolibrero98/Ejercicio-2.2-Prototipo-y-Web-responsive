@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+/*
+? --------------ESTILOS HEADER-------------------------*/
+header {
+  width: 100%;
+  height: auto;
+}
+header img {
+  width: 95%;
+  margin-top: 10px;
+}
+
+header nav {
+  width: 100%;  
+  height: auto;
+  text-align: center;
+  margin: 20px 0;
+  background-color: #247cc3;
+  padding: 10px 0;
+}
+header nav ul {
+  padding: 0px;
+  margin: 0px;
+  
+}
+header nav ul li{
+  list-style-type: none;
+  display: inline;
+  padding-right:8px;
+  font-size: 6vw;
+}
+header li:nth-child(1){
+  padding-left: 8px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(219, 216, 216);
+  text-shadow: 0.5px 0.5px 5px black;
+}
+header nav ul li a:hover {
+  color: #247cc3;
+}
+.opina {
+  color: #247cc3;
+  text-decoration: overline wavy;
+  display: none;
+}
+
+/*
+!-----------------------FIN ESTILOS HEADER------------------*/
+
+/*
+?-------------Estilos Ejercicio 2 de repaso HTML y CSS*/
+h1{
+  text-align: center;
+  color: #00F;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+table, tr, th, td {
+  border: 1px solid #333;
+  line-height: 2em;
+}
+
+th {
+  background-color: #F5F5F5;
+  padding: 0 .5em;
+}
+
+td {
+  padding: 0 .3em;
+}
+
+th.euro {
+  background: #E6F3FF url(imagenes/euro.png) no-repeat left center;
+  padding: 0 .3em 0 1.2em;
+}
+
+th.dolar {
+  background: #E6F3FF url(imagenes/dolar.png) no-repeat left center;
+  padding: 0 .3em 0 1.2em;
+}
+
+th.libra {
+  background: #E6F3FF url(imagenes/libra.png) no-repeat left center;
+  padding: 0 .3em 0 1.2em;
+}
+
+th.yen {
+  background: #E6F3FF url(imagenes/yen.png) no-repeat left center;
+  padding: 0 .3em 0 1.2em;
+}
+
+tr:nth-child(n+1) td {
+  text-align: right;
+}
+
+tr:nth-child(2n) {
+  background-color: #FFFFCC;
+}
+
+tr:hover {
+  background: #FFFF66;
+}

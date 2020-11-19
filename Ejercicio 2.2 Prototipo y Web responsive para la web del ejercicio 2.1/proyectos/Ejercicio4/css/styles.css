@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: white;
+  }
+  /*
+  ? --------------ESTILOS HEADER-------------------------*/
+  header {
+    width: 100%;
+    height: auto;
+  }
+  header img {
+    width: 95%;
+   margin-top: 10px;
+  }
+  
+  header nav {
+    width: 100%;  
+    height: auto;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #247cc3;
+    padding: 10px 0;
+  }
+  header nav ul {
+    padding: 0px;
+    margin: 0px;
+    
+  }
+  header nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right:8px;
+    font-size: 6vw;
+  }
+  header li:nth-child(1){
+    padding-left: 8px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: rgb(219, 216, 216);
+    text-shadow: 0.5px 0.5px 5px black;
+  }
+  header nav ul li a:hover {
+    color: #247cc3;
+  }
+  .opina {
+    color: #247cc3;
+    text-decoration: overline wavy;
+    display: none;
+  }
+  
+  /*
+  !-----------------------FIN ESTILOS HEADER------------------*/
+  
+  /*
+  ?-------------Estilos Ejercicio 4 de repaso HTML y CSS*/
+  h1{
+    text-align: center;
+    color: #00F;
+  }
+#recuadro{
+  -moz-column-rule-width: 2px;  
+  -webkit-column-rule-width: 2px;  
+  column-rule-width: 2px;  
+  -moz-column-rule-style: dashed;  
+  -webkit-column-rule-style: dashed;  
+  column-rule-style: dashed;  
+  -moz-column-rule-color: #00f;
+  -webkit-column-rule-color: #00f;
+  column-rule-color: #00f;  
+  -moz-column-count:3;
+  -webkit-column-count:3;
+  column-count:3;
+  border-radius: 30px;  
+  background-color:#ddd;
+  width:600px;
+  padding:10px;
+  margin:auto;
+}
+  
+  
+  
+  
+  

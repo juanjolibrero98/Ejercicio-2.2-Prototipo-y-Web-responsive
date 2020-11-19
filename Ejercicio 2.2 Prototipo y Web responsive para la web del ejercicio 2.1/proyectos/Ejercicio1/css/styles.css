@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: white;
+  }
+  /*
+  ? --------------ESTILOS HEADER-------------------------*/
+  header {
+    width: 100%;
+    height: auto;
+  }
+  header img {
+    width: 95%;
+   margin-top: 10px;
+  }
+  
+  header nav {
+    width: 100%;  
+    height: auto;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #247cc3;
+    padding: 10px 0;
+  }
+  header nav ul {
+    padding: 0px;
+    margin: 0px;
+    
+  }
+  header nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right:8px;
+    font-size: 6vw;
+  }
+  header li:nth-child(1){
+    padding-left: 8px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: rgb(219, 216, 216);
+    text-shadow: 0.5px 0.5px 5px black;
+  }
+  header nav ul li a:hover {
+    color: #247cc3;
+  }
+  .opina {
+    color: #247cc3;
+    text-decoration: overline wavy;
+    display: none;
+  }
+  
+  /*
+  !-----------------------FIN ESTILOS HEADER------------------*/
+  
+
+  /*
+  ?----------Estilos Ejercicio1--------------*/
+  h1{
+    text-align: center;
+    color: #00F;
+  }
+  #formacion li, #experiencia li {
+    color: #00F;
+  }
+  
+  #formacion li strong, #experiencia li strong {
+    color: #000;
+  }
+  
+  @media (min-width: 1201px) {
+    #datos {
+      float: left;
+      width: 30%;
+    }
+    
+    #curriculo {
+      float: left;
+      width: 70%;
+    }
+    
+    #formacion {
+      float: left;
+      width: 50%;
+    }
+    
+    #experiencia {
+      float: left;
+      width: 50%;  
+    }
+  }
+  
+  
+  @media (min-width: 601px) and (max-width: 1200px) {
+    body {
+      font-family: Arial,sans-serif;
+    }
+  
+    #datos {
+      float: left;
+      width: 30%;
+    }
+    
+    #curriculo {
+      float: left;
+      width: 70%;
+    }
+    
+    #datos ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    #datos li + li {
+      margin-top: 10px;
+    }
+  
+    #datos li strong {
+      display: block;
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+    body {
+      font-family: Arial,sans-serif;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    h2 {
+      font-size: 1.2em;
+      border-bottom: 1px solid #000;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li + li {
+      margin-top: 10px;
+    }
+  
+    li strong {
+      display: block;
+    }
+  }
